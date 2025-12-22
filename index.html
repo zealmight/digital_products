@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lynto coding ile dijital ürünler tasarlıyorum - Fatura takip, muhasebe, AI chatbot ve daha fazlası">
+    <title data-tr="Dijital Ürün Tasarımı | Lynto Coding" data-en="Digital Product Design | Lynto Coding">Dijital Ürün
+        Tasarımı | Lynto Coding</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span data-tr="Lynto Kodlama" data-en="Lynto Coding">Lynto Coding</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a>
+                    <a href="#services" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
+                    <a href="#features" data-tr="Yetenekler" data-en="Features">Yetenekler</a>
+                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</a>
+
+                    <!-- Language Toggle -->
+                    <button class="lang-toggle" id="langToggle" aria-label="Language Toggle">
+                        <span class="lang-option active" data-lang="tr">TR</span>
+                        <span class="lang-divider">|</span>
+                        <span class="lang-option" data-lang="en">EN</span>
+                    </button>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Theme Toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-tr="✨ Dijital Çözümler" data-en="✨ Digital Solutions">✨ Dijital Çözümler
+                </div>
+                <h1 class="hero-title">
+                    <span data-tr="Müşteri İhtiyaçlarına Yönelik" data-en="Customer-Focused">Müşteri İhtiyaçlarına
+                        Yönelik</span><br>
+                    <span class="gradient-text" data-tr="Dijital Ürünler Tasarlıyorum"
+                        data-en="Digital Product Design">Dijital Ürünler Tasarlıyorum</span>
+                </h1>
+                <p class="hero-description"
+                    data-tr="Lynto
+                     coding ile işletmeniz için özel dijital çözümler geliştiriyorum. Fatura takip sistemlerinden AI destekli chatbot'lara kadar, ihtiyacınıza özel uygulamalar."
+                    data-en="I develop custom digital solutions for your business with Lynto coding. From invoice tracking systems to AI-powered chatbots, applications tailored to your needs.">
+                    Lynto coding ile işletmeniz için özel dijital çözümler geliştiriyorum. Fatura takip sistemlerinden
+                    AI
+                    destekli chatbot'lara kadar, ihtiyacınıza özel uygulamalar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <span data-tr="Hizmetleri Keşfet" data-en="Explore Services">Hizmetleri Keşfet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://shopier.com/onatdibo" class="btn btn-secondary">
+                        <span data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-file-invoice"></i>
+                    <span data-tr="Fatura Takip" data-en="Invoice Tracking">Fatura Takip</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-robot"></i>
+                    <span data-tr="AI Chatbot" data-en="AI Chatbot">AI Chatbot</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-calculator"></i>
+                    <span data-tr="Muhasebe" data-en="Accounting">Muhasebe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Hizmet Kategorileri" data-en="Service Categories">Hizmet Kategorileri
+                </h2>
+                <p class="section-description" data-tr="İşletmeniz için özel olarak tasarlanmış dijital çözümler"
+                    data-en="Digital solutions specially designed for your business">İşletmeniz için özel olarak
+                    tasarlanmış dijital çözümler</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Business Management Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title" data-tr="İş Yönetimi Çözümleri" data-en="Business Management Solutions">İş
+                        Yönetimi Çözümleri</h3>
+                    <p class="service-description"
+                        data-tr="İşletmenizin günlük operasyonlarını kolaylaştıran akıllı sistemler"
+                        data-en="Smart systems that simplify your business's daily operations">İşletmenizin günlük
+                        operasyonlarını kolaylaştıran akıllı sistemler</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="Fatura Takip Sistemi"
+                                data-en="Invoice Tracking System">Fatura Takip Sistemi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Muhasebe Uygulamaları"
+                                data-en="Accounting Applications">Muhasebe Uygulamaları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Stok Yönetimi"
+                                data-en="Inventory Management">Stok Yönetimi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="CRM Sistemleri" data-en="CRM Systems">CRM
+                                Sistemleri</span></li>
+                    </ul>
+                </div>
+
+                <!-- AI Solutions -->
+                <div class="service-card featured">
+                    <div class="featured-badge" data-tr="Popüler" data-en="Popular">Popüler</div>
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title" data-tr="Yapay Zeka Çözümleri" data-en="AI Solutions">Yapay Zeka Çözümleri
+                    </h3>
+                    <p class="service-description"
+                        data-tr="Yapay zeka destekli akıllı sistemlerle işlerinizi otomatikleştirin"
+                        data-en="Automate your business with AI-powered smart systems">Yapay zeka destekli akıllı
+                        sistemlerle işlerinizi otomatikleştirin</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="AI Chatbot Geliştirme"
+                                data-en="AI Chatbot Development">AI Chatbot Geliştirme</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Otomasyon Araçları"
+                                data-en="Automation Tools">Otomasyon Araçları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Veri Analizi" data-en="Data Analysis">Veri
+                                Analizi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Akıllı Asistanlar"
+                                data-en="Smart Assistants">Akıllı Asistanlar</span></li>
+                    </ul>
+                </div>
+
+                <!-- Web Applications -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title" data-tr="Web Uygulamaları" data-en="Web Applications">Web Uygulamaları
+                    </h3>
+                    <p class="service-description"
+                        data-tr="Modern ve responsive web platformları ile dijital varlığınızı güçlendirin"
+                        data-en="Strengthen your digital presence with modern and responsive web platforms">Modern ve
+                        responsive web platformları ile dijital varlığınızı güçlendirin</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="Özel Web Platformları"
+                                data-en="Custom Web Platforms">Özel Web Platformları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="SaaS Çözümleri" data-en="SaaS Solutions">SaaS
+                                Çözümleri</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="E-ticaret Sistemleri"
+                                data-en="E-commerce Systems">E-ticaret Sistemleri</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Dashboard & Panel"
+                                data-en="Dashboard & Panel">Dashboard & Panel</span></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Applications -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title" data-tr="Mobil Uygulamalar" data-en="Mobile Applications">Mobil
+                        Uygulamalar</h3>
+                    <p class="service-description"
+                        data-tr="iOS ve Android için native ve cross-platform mobil uygulamalar"
+                        data-en="Native and cross-platform mobile applications for iOS and Android">iOS ve Android için
+                        native ve cross-platform mobil uygulamalar</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="iOS Uygulamaları" data-en="iOS Applications">iOS
+                                Uygulamaları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Android Uygulamaları"
+                                data-en="Android Applications">Android Uygulamaları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Cross-Platform Çözümler"
+                                data-en="Cross-Platform Solutions">Cross-Platform Çözümler</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Progressive Web Apps"
+                                data-en="Progressive Web Apps">Progressive Web Apps</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Skills Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Teknik Yetenekler" data-en="Technical Skills">Teknik Yetenekler</h2>
+                <p class="section-description" data-tr="Modern teknolojiler ve araçlarla güçlü çözümler"
+                    data-en="Powerful solutions with modern technologies and tools">Modern teknolojiler ve araçlarla
+                    güçlü çözümler</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-category">
+                    <h3 class="category-title" data-tr="Frontend Geliştirme" data-en="Frontend Development">Frontend
+                        Development</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="feature-category">
+                    <h3 class="category-title" data-tr="Backend Geliştirme" data-en="Backend Development">Backend
+                        Development</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </div>
+
+                <div class="feature-category">
+                    <h3 class="category-title" data-tr="Yapay Zeka & ML" data-en="AI & ML">Yapay Zeka & ML</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">ChatGPT API</span>
+                    </div>
+                </div>
+
+                <div class="feature-category">
+                    <h3 class="category-title" data-tr="Mobil Geliştirme" data-en="Mobile Development">Mobil Geliştirme
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</h2>
+                <p class="section-description"
+                    data-tr="İhtiyacınıza uygun paketi seçin ve dijital dönüşümünüze başlayın"
+                    data-en="Choose the package that suits your needs and start your digital transformation">
+                    İhtiyacınıza uygun paketi seçin ve dijital dönüşümünüze başlayın</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-tr="Başlangıç" data-en="Starter">Başlangıç</h3>
+                        <p class="pricing-description" data-tr="Küçük işletmeler için ideal"
+                            data-en="Ideal for small businesses">Küçük işletmeler için ideal</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">₺</span>
+                        <span class="amount">15,000</span>
+                        <span class="period" data-tr="/proje" data-en="/project">/proje</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="Temel web uygulaması"
+                                data-en="Basic web application">Temel web uygulaması</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Responsive tasarım"
+                                data-en="Responsive design">Responsive tasarım</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="3 sayfa/modül" data-en="3 pages/modules">3
+                                sayfa/modül</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Temel SEO optimizasyonu"
+                                data-en="Basic SEO optimization">Temel SEO optimizasyonu</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="1 ay teknik destek"
+                                data-en="1 month technical support">1 ay teknik destek</span></li>
+                        <li class="disabled"><i class="fas fa-times"></i> <span data-tr="Veritabanı entegrasyonu"
+                                data-en="Database integration">Veritabanı entegrasyonu</span></li>
+                        <li class="disabled"><i class="fas fa-times"></i> <span data-tr="API geliştirme"
+                                data-en="API development">API geliştirme</span></li>
+                    </ul>
+                    <button class="btn btn-secondary pricing-btn">
+                        <span data-tr="Başlayın" data-en="Get Started">Başlayın</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Professional Package (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge" data-tr="Popüler" data-en="Popular">Popüler</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-tr="Profesyonel" data-en="Professional">Profesyonel</h3>
+                        <p class="pricing-description" data-tr="Orta ölçekli işletmeler için"
+                            data-en="For medium-sized businesses">Orta ölçekli işletmeler için</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">₺</span>
+                        <span class="amount">35,000</span>
+                        <span class="period" data-tr="/proje" data-en="/project">/proje</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="Gelişmiş web uygulaması"
+                                data-en="Advanced web application">Gelişmiş web uygulaması</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Özel tasarım" data-en="Custom design">Özel
+                                tasarım</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="10 sayfa/modül" data-en="10 pages/modules">10
+                                sayfa/modül</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Veritabanı entegrasyonu"
+                                data-en="Database integration">Veritabanı entegrasyonu</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="REST API geliştirme"
+                                data-en="REST API development">REST API geliştirme</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Admin paneli" data-en="Admin panel">Admin
+                                paneli</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="3 ay teknik destek"
+                                data-en="3 months technical support">3 ay teknik destek</span></li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn">
+                        <span data-tr="Başlayın" data-en="Get Started">Başlayın</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-tr="Kurumsal" data-en="Enterprise">Kurumsal</h3>
+                        <p class="pricing-description" data-tr="Büyük ölçekli projeler için"
+                            data-en="For large-scale projects">Büyük ölçekli projeler için</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency" data-tr="Özel" data-en="Custom">Özel</span>
+                        <span class="amount" data-tr="Fiyat" data-en="Price">Fiyat</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-tr="Tam özelleştirilmiş çözüm"
+                                data-en="Fully customized solution">Tam özelleştirilmiş çözüm</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Sınırsız sayfa/modül"
+                                data-en="Unlimited pages/modules">Sınırsız sayfa/modül</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Mikroservis mimarisi"
+                                data-en="Microservices architecture">Mikroservis mimarisi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="AI/ML entegrasyonu"
+                                data-en="AI/ML integration">AI/ML entegrasyonu</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Mobil uygulama"
+                                data-en="Mobile application">Mobil uygulama</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="DevOps & CI/CD" data-en="DevOps & CI/CD">DevOps
+                                & CI/CD</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="1 yıl premium destek"
+                                data-en="1 year premium support">1 yıl premium destek</span></li>
+                    </ul>
+                    <button class="btn btn-secondary pricing-btn">
+                        <span data-tr="İletişime Geçin" data-en="Contact Us">İletişime Geçin</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pricing Note -->
+            <div class="pricing-note">
+                <p data-tr="* Fiyatlar proje kapsamına göre değişiklik gösterebilir. Detaylı bilgi için iletişime geçin."
+                    data-en="* Prices may vary depending on project scope. Contact us for detailed information.">*
+                    Fiyatlar proje kapsamına göre değişiklik gösterebilir. Detaylı bilgi için iletişime geçin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>Lynto Coding</span>
+                    </div>
+                    <p data-tr="Müşteri ihtiyaçlarına yönelik dijital çözümler"
+                        data-en="Customer-focused digital solutions">Müşteri ihtiyaçlarına yönelik dijital çözümler</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
+                    <a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a>
+                    <a href="#services" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
+                    <a href="#features" data-tr="Yetenekler" data-en="Features">Yetenekler</a>
+                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4 data-tr="Sosyal Medya" data-en="Social Media">Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/onatdibo" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/zealmight" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/zealmight" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/zealmght" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lynto Coding. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm
+                        hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
