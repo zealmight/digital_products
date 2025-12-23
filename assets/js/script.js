@@ -37,6 +37,7 @@ const translations = {
         'Yetenekler': 'Features',
         'İletişim': 'Contact',
 
+
         '✨ Dijital Çözümler': '✨ Digital Solutions',
         'Müşteri İhtiyaçlarına Yönelik': 'Customer-Focused',
         'Dijital Ürünler Tasarlıyorum': 'Digital Product Design',
