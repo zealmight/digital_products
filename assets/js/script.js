@@ -347,13 +347,11 @@ function initScrollAnimations() {
 
         // Eğer 100px'den fazla kaydırıldıysa
         if (currentScroll > 100) {
-            // Navbar'ı daha koyu yap ve gölge ekle
-            navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-            navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.2)';
+            // Navbar'a 'scrolled' class'ını ekle
+            navbar.classList.add('scrolled');
         } else {
-            // Değilse, orijinal haline döndür
-            navbar.style.background = 'rgba(30, 41, 59, 0.7)';
-            navbar.style.boxShadow = 'none';
+            // 'scrolled' class'ını kaldır
+            navbar.classList.remove('scrolled');
         }
 
         lastScroll = currentScroll;  // Son pozisyonu güncelle
