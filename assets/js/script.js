@@ -1,7 +1,7 @@
 // ==========================================
 // ÇOK DİLLİ SİSTEM (Multi-Language System)
 // ==========================================
-// Bu bölüm sitenin Türkçe ve İngilizce dahil 6 farklı dilde
+// Bu bölüm sitenin Türkçe ve İngilizce dillerinde
 // dinamik olarak içerik değiştirmesini sağlar.
 
 // Tüm dillerdeki çeviri metinlerini tutan merkezi obje
@@ -19,34 +19,6 @@ const translations = {
         'Yetenekler': 'Features',
         'Fiyatlandırma': 'Pricing',
         'Tüm hakları saklıdır.': 'All rights reserved.'
-    },
-    de: {
-        'Ana Sayfa': 'Startseite',
-        'Hizmetler': 'Dienstleistungen',
-        'Yetenekler': 'Fähigkeiten',
-        'Fiyatlandırma': 'Preise',
-        'Tüm hakları saklıdır.': 'Alle Rechte vorbehalten.'
-    },
-    fr: {
-        'Ana Sayfa': 'Accueil',
-        'Hizmetler': 'Services',
-        'Yetenekler': 'Capacités',
-        'Fiyatlandırma': 'Tarification',
-        'Tüm hakları saklıdır.': 'Tous droits réservés.'
-    },
-    es: {
-        'Ana Sayfa': 'Inicio',
-        'Hizmetler': 'Servicios',
-        'Yetenekler': 'Habilidades',
-        'Fiyatlandırma': 'Precios',
-        'Tüm hakları saklıdır.': 'Todos los derechos reservados.'
-    },
-    ru: {
-        'Ana Sayfa': 'Главная',
-        'Hizmetler': 'Услуги',
-        'Yetenekler': 'Навыки',
-        'Fiyatlandırma': 'Цены',
-        'Tüm hakları saklıdır.': 'Все права защищены.'
     }
 };
 
