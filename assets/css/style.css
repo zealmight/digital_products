@@ -1,4 +1,7 @@
-/* CSS Variables - Design System */
+/* ==========================================================================
+   TASARIM SİSTEMİ VE DEĞİŞKENLER (Design System & Variables)
+   Sitenin renk, boşluk ve temel stil ayarları burada tanımlanır.
+   ========================================================================== */
 :root {
     --primary-gradient: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
     --secondary-gradient: linear-gradient(135deg, #64748b 0%, #475569 100%);
@@ -45,6 +48,9 @@ body.light-theme {
     --shadow-glow: 0 0 40px rgba(13, 148, 136, 0.15);
 }
 
+/* ==========================================================================
+   TEMEL SIFIRLAMA VE GENEL STİLLER (Global Resets & Base Styles)
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +59,7 @@ body.light-theme {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,6 +68,8 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
     transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -114,7 +123,12 @@ a {
     background-clip: text;
 }
 
-/* Navigation */
+
+/* ==========================================================================
+   NAVİGASYON (Navigation)
+   Üst menü, logo ve dil/tema kontrolleri ayarları.
+   ========================================================================== */
+/* Ana Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -166,19 +180,21 @@ body.light-theme .navbar.scrolled {
     background-clip: text;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
     align-items: center;
     gap: var(--spacing-lg);
+    flex: 1;
+    justify-content: center;
 }
 
-.nav-links a {
+.nav-menu a {
     font-weight: 500;
     position: relative;
     padding: var(--spacing-xs) 0;
 }
 
-.nav-links a::after {
+.nav-menu a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -189,64 +205,124 @@ body.light-theme .navbar.scrolled {
     transition: var(--transition-normal);
 }
 
-.nav-links a:hover::after {
+.nav-menu a:hover::after {
     width: 100%;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.nav-controls .lang-toggle {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* Language Dropdown */
+.lang-dropdown-container {
+    position: relative;
+    z-index: 1001;
 }
 
 .lang-toggle {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xs);
+    gap: 0.5rem;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-sm);
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     transition: var(--transition-normal);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .lang-toggle:hover {
     border-color: var(--accent-color);
 }
 
+.lang-toggle i.fa-chevron-down {
+    font-size: 0.8rem;
+    transition: transform var(--transition-normal);
+}
+
+.lang-dropdown-container.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    min-width: 160px;
+    padding: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-normal);
+}
+
+.lang-dropdown-container.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .lang-option {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
     cursor: pointer;
+    transition: var(--transition-fast);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lang-option:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
 }
 
 .lang-option.active {
     color: var(--accent-color);
+    background: rgba(13, 148, 136, 0.1);
 }
 
-.lang-divider {
-    color: var(--text-muted);
+.lang-flag {
+    font-size: 1.2rem;
 }
 
 .theme-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: var(--transition-normal);
     position: relative;
-    overflow: hidden;
 }
 
 .theme-toggle:hover {
     border-color: var(--accent-color);
-    transform: scale(1.05);
 }
 
 .theme-toggle i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-primary);
     transition: var(--transition-normal);
     position: absolute;
@@ -281,7 +357,11 @@ body.light-theme .theme-toggle .fa-sun {
     cursor: pointer;
 }
 
-/* Hero Section */
+
+/* ==========================================================================
+   HERO BÖLÜMÜ (Landing Area)
+   Giriş başlığı ve hareketli görsel kartları.
+   ========================================================================== */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -296,11 +376,12 @@ body.light-theme .theme-toggle .fa-sun {
     position: absolute;
     top: -50%;
     right: -20%;
-    width: 800px;
+    width: min(800px, 100vw);
     height: 800px;
     background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
     border-radius: 50%;
     animation: pulse 8s ease-in-out infinite;
+    pointer-events: none;
 }
 
 body.light-theme .hero::before {
@@ -419,6 +500,9 @@ body.light-theme .hero::before {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     animation: float 6s ease-in-out infinite;
+    z-index: 2;
+    min-width: 140px;
+    text-align: center;
 }
 
 .floating-card i {
@@ -432,23 +516,24 @@ body.light-theme .hero::before {
 .floating-card span {
     font-weight: 600;
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .card-1 {
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     animation-delay: 0s;
 }
 
 .card-2 {
-    top: 50%;
-    right: 10%;
+    top: 45%;
+    right: 5%;
     animation-delay: 2s;
 }
 
 .card-3 {
-    bottom: 10%;
-    left: 20%;
+    bottom: 5%;
+    left: 15%;
     animation-delay: 4s;
 }
 
@@ -508,14 +593,18 @@ section {
     margin: 0 auto;
 }
 
-/* Services Section */
+
+/* ==========================================================================
+   HİZMETLER BÖLÜMÜ (Services)
+   Sunulan hizmet kartlarının grid yapısı ve stilleri.
+   ========================================================================== */
 .services {
     background: var(--bg-secondary);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: var(--spacing-lg);
 }
 
@@ -598,10 +687,14 @@ section {
     font-size: 0.9rem;
 }
 
-/* Features Section */
+
+/* ==========================================================================
+   YETENEKLER BÖLÜMÜ (Features/Skills)
+   Teknik becerilerin ve teknoloji ikonlarının yer aldığı bölüm.
+   ========================================================================== */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: var(--spacing-lg);
 }
 
@@ -632,15 +725,22 @@ section {
 }
 
 .tech-tag {
-    display: inline-block;
-    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
     background: rgba(99, 102, 241, 0.1);
     border: 1px solid rgba(99, 102, 241, 0.3);
     border-radius: var(--radius-sm);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--text-primary);
     transition: var(--transition-fast);
+}
+
+.tech-tag i {
+    font-size: 1.1rem;
+    color: var(--accent-color);
 }
 
 .tech-tag:hover {
@@ -649,14 +749,18 @@ section {
     transform: scale(1.05);
 }
 
-/* Pricing Section */
+
+/* ==========================================================================
+   FİYATLANDIRMA BÖLÜMÜ (Pricing)
+   Paket seçenekleri ve proje maliyetleri.
+   ========================================================================== */
 .pricing {
     background: var(--bg-secondary);
 }
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-xl);
 }
@@ -793,7 +897,10 @@ section {
     font-style: italic;
 }
 
-/* Footer */
+
+/* ==========================================================================
+   ALT BİLGİ (Footer)
+   ========================================================================== */
 .footer {
     background: var(--bg-primary);
     border-top: 1px solid var(--glass-border);
@@ -877,7 +984,12 @@ section {
     color: var(--text-muted);
 }
 
-/* Responsive Design */
+
+/* ==========================================================================
+   RESPONSIVE TASARIM (Responsive Design)
+   Farklı ekran boyutları için özelleştirilmiş uyumluluk ayarları.
+   ========================================================================== */
+/* Tablet Görünümü (968px altı) */
 @media (max-width: 968px) {
     .hero .container {
         grid-template-columns: 1fr;
@@ -905,7 +1017,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    .nav-menu {
         position: fixed;
         top: 70px;
         left: 0;
@@ -917,9 +1029,10 @@ section {
         transform: translateX(-100%);
         transition: var(--transition-normal);
         border-bottom: 1px solid var(--glass-border);
+        z-index: 999;
     }
 
-    .nav-links.active {
+    .nav-menu.active {
         transform: translateX(0);
     }
 
@@ -932,8 +1045,12 @@ section {
     }
 
     .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .feature-category {
+        margin-bottom: var(--spacing-sm);
     }
 
     .hero-buttons {
@@ -946,7 +1063,12 @@ section {
     }
 }
 
-/* Scroll Animations */
+
+/* ==========================================================================
+   ANİMASYONLAR (Animations)
+   Giriş efektleri ve görsel hareketler.
+   ========================================================================== */
+/* Scroll sırasında görünürlük sağlayan animasyon sınıfı */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);

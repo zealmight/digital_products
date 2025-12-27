@@ -2,12 +2,15 @@
 <html lang="tr">
 
 <head>
+    <!-- Sayfa karakter seti ve görünüm ayarları -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Lynto coding ile dijital ürünler tasarlıyorum - Fatura takip, muhasebe, AI chatbot ve daha fazlası">
-    <title data-tr="Dijital Ürün Tasarımı | Lynto Kodlama" data-en="Digital Product Design | Lynto Coding">Dijital Ürün
-        Tasarımı | Lynto Kodlama</title>
+    <title data-tr="Dijital Ürün Tasarımı | Lynto Kodlama" data-en="Digital Product Design | Lynto Coding"
+        data-de="Digitales Produktdesign | Lynto Coding" data-fr="Conception de produits numériques | Lynto Coding"
+        data-es="Diseño de productos digitales | Lynto Coding" data-ru="Дизайн цифровых продуктов | Lynto Coding">
+        Dijital Ürün Tasarımı | Lynto Kodlama</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,27 +26,62 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Navigasyon Menüsü -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
+                <!-- Logo Bölümü -->
                 <a href="/" class="logo">
                     <i class="fas fa-code"></i>
-                    <span data-tr="Lynto Kodlama" data-en="Lynto Coding">Lynto Kodlama</span>
+                    <span data-tr="Lynto Kodlama" data-en="Lynto Coding" data-de="Lynto Coding" data-fr="Lynto Coding"
+                        data-es="Lynto Coding" data-ru="Lynto Coding">Lynto Kodlama</span>
                 </a>
 
-                <div class="nav-links">
-                    <a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a>
-                    <a href="#services" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
-                    <a href="#features" data-tr="Yetenekler" data-en="Features">Yetenekler</a>
-                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</a>
+                <div class="nav-menu">
+                    <a href="#home" data-tr="Ana Sayfa" data-en="Home" data-de="Startseite" data-fr="Accueil"
+                        data-es="Inicio" data-ru="Главная">Ana Sayfa</a>
+                    <a href="#services" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen"
+                        data-fr="Services" data-es="Servicios" data-ru="Услуги">Hizmetler</a>
+                    <a href="#features" data-tr="Yetenekler" data-en="Features" data-de="Fähigkeiten"
+                        data-fr="Capacités" data-es="Habilidades" data-ru="Навыки">Yetenekler</a>
+                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing" data-de="Preisgestaltung"
+                        data-fr="Tarification" data-es="Precios" data-ru="Цены">Fiyatlandırma</a>
+                </div>
 
-                    <!-- Language Toggle -->
-                    <button class="lang-toggle" id="langToggle" aria-label="Language Toggle">
-                        <span class="lang-option active" data-lang="tr">TR</span>
-                        <span class="lang-divider">|</span>
-                        <span class="lang-option" data-lang="en">EN</span>
-                    </button>
+                <div class="nav-controls">
+                    <!-- Language Dropdown -->
+                    <div class="lang-dropdown-container" id="langDropdown">
+                        <button class="lang-toggle" aria-label="Language Selector">
+                            <span class="current-lang-text">TR</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="lang-dropdown">
+                            <div class="lang-option active" data-lang="tr">
+                                <span class="lang-flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </div>
+                            <div class="lang-option" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span>English</span>
+                            </div>
+                            <div class="lang-option" data-lang="de">
+                                <span class="lang-flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </div>
+                            <div class="lang-option" data-lang="fr">
+                                <span class="lang-flag">🇫🇷</span>
+                                <span>Français</span>
+                            </div>
+                            <div class="lang-option" data-lang="es">
+                                <span class="lang-flag">🇪🇸</span>
+                                <span>Español</span>
+                            </div>
+                            <div class="lang-option" data-lang="ru">
+                                <span class="lang-flag">🇷🇺</span>
+                                <span>Русский</span>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Theme Toggle -->
                     <button class="theme-toggle" id="themeToggle" aria-label="Theme Toggle">
@@ -64,59 +102,82 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge" data-tr="✨ Dijital Çözümler" data-en="✨ Digital Solutions">✨ Dijital Çözümler
+                <div class="hero-badge" data-tr="✨ Dijital Çözümler" data-en="✨ Digital Solutions"
+                    data-de="✨ Digitale Lösungen" data-fr="✨ Solutions numériques" data-es="✨ Soluciones digitales"
+                    data-ru="✨ Цифровые решения">✨ Dijital Çözümler
                 </div>
                 <h1 class="hero-title">
-                    <span data-tr="Müşteri İhtiyaçlarına Yönelik" data-en="Customer-Focused">Müşteri İhtiyaçlarına
+                    <span data-tr="Müşteri İhtiyaçlarına Yönelik" data-en="Customer-Focused" data-de="Kundenorientiert"
+                        data-fr="Orienté client" data-es="Centrado en el cliente" data-ru="Клиент в фокусе">Müşteri
+                        İhtiyaçlarına
                         Yönelik</span><br>
-                    <span class="gradient-text" data-tr="Dijital Ürünler Tasarlıyorum"
-                        data-en="Digital Product Design">Dijital Ürünler Tasarlıyorum</span>
+                    <span class="gradient-text" data-tr="Dijital Ürünler Tasarlıyorum" data-en="Digital Product Design"
+                        data-de="Entwerfe digitale Produkte" data-fr="Concevoir des produits numériques"
+                        data-es="Diseño productos digitales" data-ru="Я проектирую цифровые продукты">Dijital Ürünler
+                        Tasarlıyorum</span>
                 </h1>
                 <p class="hero-description"
-                    data-tr="Lynto
-                     coding ile işletmeniz için özel dijital çözümler geliştiriyorum. Fatura takip sistemlerinden AI destekli chatbot'lara kadar, ihtiyacınıza özel uygulamalar."
-                    data-en="I develop custom digital solutions for your business with Lynto coding. From invoice tracking systems to AI-powered chatbots, applications tailored to your needs.">
+                    data-tr="Lynto coding ile işletmeniz için özel dijital çözümler geliştiriyorum. Fatura takip sistemlerinden AI destekli chatbot'lara kadar, ihtiyacınıza özel uygulamalar."
+                    data-en="I develop custom digital solutions for your business with Lynto coding. From invoice tracking systems to AI-powered chatbots, applications tailored to your needs."
+                    data-de="Ich entwickle maßgeschneiderte digitale Lösungen für Ihr Unternehmen mit Lynto coding. Von Rechnungsverfolgungssystemen bis hin zu KI-gestützten Chatbots, Anwendungen, die auf Ihre Bedürfnisse zugeschnitten sind."
+                    data-fr="Je développe des solutions numériques personnalisées pour votre entreprise avec Lynto coding. Des systèmes de suivi des factures aux chatbots alimentés par l'IA, des applications adaptées à vos besoins."
+                    data-es="Desarrollo soluciones digitales personalizadas para su negocio con Lynto coding. Desde sistemas de seguimiento de facturas hasta chatbots con IA, aplicaciones adaptadas a sus necesidades."
+                    data-ru="Я разрабатываю индивидуальные цифровые решения для вашего бизнеса с помощью Lynto coding. От систем отслеживания счетов до чат-ботов на базе ИИ, приложения, адаптированные к вашим потребностям.">
                     Lynto coding ile işletmeniz için özel dijital çözümler geliştiriyorum. Fatura takip sistemlerinden
                     AI
                     destekli chatbot'lara kadar, ihtiyacınıza özel uygulamalar.
                 </p>
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">
-                        <span data-tr="Hizmetleri Keşfet" data-en="Explore Services">Hizmetleri Keşfet</span>
+                        <span data-tr="Hizmetleri Keşfet" data-en="Explore Services"
+                            data-de="Dienstleistungen entdecken" data-fr="Explorer les services"
+                            data-es="Explorar servicios" data-ru="Узнать больше">Hizmetleri Keşfet</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                     <a href="https://shopier.com/onatdibo" class="btn btn-secondary" target="_blank">
-                        <span data-tr="Sipariş Ver" data-en="Place an Holder">Sipariş Ver</span>
+                        <span data-tr="Sipariş Ver" data-en="Place an Order" data-de="Bestellung aufgeben"
+                            data-fr="Passer commande" data-es="Realizar pedido" data-ru="Сделать заказ">Sipariş
+                            Ver</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Hero Visual -->
+            <!-- Hero Görsel - Kayan Kartlar (Masaüstü) -->
             <div class="hero-visual">
                 <div class="floating-card card-1">
                     <i class="fas fa-file-invoice"></i>
-                    <span data-tr="Fatura Takip" data-en="Invoice Tracking">Fatura Takip</span>
+                    <span data-tr="Fatura Takip" data-en="Invoice Tracking" data-de="Rechnungsverfolgung"
+                        data-fr="Suivi des factures" data-es="Seguimiento de facturas"
+                        data-ru="Отслеживание счетов">Fatura Takip</span>
                 </div>
                 <div class="floating-card card-2">
                     <i class="fas fa-robot"></i>
-                    <span data-tr="AI Chatbot" data-en="AI Chatbot">AI Chatbot</span>
+                    <span data-tr="AI Chatbot" data-en="AI Chatbot" data-de="KI-Chatbot" data-fr="Chatbot IA"
+                        data-es="Chatbot de IA" data-ru="ИИ-чатбот">AI Chatbot</span>
                 </div>
                 <div class="floating-card card-3">
                     <i class="fas fa-calculator"></i>
-                    <span data-tr="Muhasebe" data-en="Accounting">Muhasebe</span>
+                    <span data-tr="Muhasebe" data-en="Accounting" data-de="Buchhaltung" data-fr="Comptabilité"
+                        data-es="Contabilidad" data-ru="Бухгалтерия">Muhasebe</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Hizmetler Bölümü -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-tr="Hizmet Kategorileri" data-en="Service Categories">Hizmet Kategorileri
+                <h2 class="section-title" data-tr="Hizmet Kategorileri" data-en="Service Categories"
+                    data-de="Dienstleistungskategorien" data-fr="Catégories de services"
+                    data-es="Categorías de servicios" data-ru="Категории услуг">Hizmet Kategorileri
                 </h2>
                 <p class="section-description" data-tr="İşletmeniz için özel olarak tasarlanmış dijital çözümler"
-                    data-en="Digital solutions specially designed for your business">İşletmeniz için özel olarak
+                    data-en="Digital solutions specially designed for your business"
+                    data-de="Speziell für Ihr Unternehmen entwickelte digitale Lösungen"
+                    data-fr="Solutions numériques spécialement conçues pour votre entreprise"
+                    data-es="Soluciones digitales diseñadas especialmente para su negocio"
+                    data-ru="Цифровые решения, специально разработанные для вашего бизнеса">İşletmeniz için özel olarak
                     tasarlanmış dijital çözümler</p>
             </div>
 
@@ -126,45 +187,71 @@
                     <div class="service-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3 class="service-title" data-tr="İş Yönetimi Çözümleri" data-en="Business Management Solutions">İş
+                    <h3 class="service-title" data-tr="İş Yönetimi Çözümleri" data-en="Business Management Solutions"
+                        data-de="Unternehmensmanagement-Lösungen" data-fr="Solutions de gestion d'entreprise"
+                        data-es="Soluciones de gestión empresarial" data-ru="Решения для управления бизнесом">İş
                         Yönetimi Çözümleri</h3>
                     <p class="service-description"
                         data-tr="İşletmenizin günlük operasyonlarını kolaylaştıran akıllı sistemler"
-                        data-en="Smart systems that simplify your business's daily operations">İşletmenizin günlük
-                        operasyonlarını kolaylaştıran akıllı sistemler</p>
+                        data-en="Smart systems that simplify your business's daily operations"
+                        data-de="Intelligente Systeme, die das Tagesgeschäft Ihres Unternehmens vereinfachen"
+                        data-fr="Des systèmes intelligents qui simplifient les opérations quotidiennes de votre entreprise"
+                        data-es="Sistemas inteligentes que simplifican las operaciones diarias de su negocio"
+                        data-ru="Интеллектуальные системы, упрощающие повседневную деятельность вашего бизнеса">
+                        İşletmenizin günlük operasyonlarını kolaylaştıran akıllı sistemler</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> <span data-tr="Fatura Takip Sistemi"
-                                data-en="Invoice Tracking System">Fatura Takip Sistemi</span></li>
+                                data-en="Invoice Tracking System" data-de="Rechnungsverfolgungssystem"
+                                data-fr="Système de suivi des factures" data-es="Sistema de seguimiento de facturas"
+                                data-ru="Система отслеживания счетов">Fatura Takip Sistemi</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Muhasebe Uygulamaları"
-                                data-en="Accounting Applications">Muhasebe Uygulamaları</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Stok Yönetimi"
-                                data-en="Inventory Management">Stok Yönetimi</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="CRM Sistemleri" data-en="CRM Systems">CRM
-                                Sistemleri</span></li>
+                                data-en="Accounting Applications" data-de="Buchhaltungsanwendungen"
+                                data-fr="Applications comptables" data-es="Aplicaciones contables"
+                                data-ru="Бухгалтерские приложения">Muhasebe Uygulamaları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Stok Yönetimi" data-en="Inventory Management"
+                                data-de="Lagerverwaltung" data-fr="Gestion des stocks" data-es="Gestión de inventario"
+                                data-ru="Управление запасами">Stok Yönetimi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="CRM Sistemleri" data-en="CRM Systems"
+                                data-de="CRM-Systeme" data-fr="Systèmes CRM" data-es="Sistemas CRM"
+                                data-ru="CRM-системы">CRM Sistemleri</span></li>
                     </ul>
                 </div>
 
                 <!-- AI Solutions -->
                 <div class="service-card featured">
-                    <div class="featured-badge" data-tr="Popüler" data-en="Popular">Popüler</div>
+                    <div class="featured-badge" data-tr="Popüler" data-en="Popular" data-de="Beliebt"
+                        data-fr="Populaire" data-es="Popular" data-ru="Популярное">Popüler</div>
                     <div class="service-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3 class="service-title" data-tr="Yapay Zeka Çözümleri" data-en="AI Solutions">Yapay Zeka Çözümleri
+                    <h3 class="service-title" data-tr="Yapay Zeka Çözümleri" data-en="AI Solutions"
+                        data-de="KI-Lösungen" data-fr="Solutions d'IA" data-es="Soluciones de IA"
+                        data-ru="Решения на базе ИИ">Yapay Zeka Çözümleri
                     </h3>
                     <p class="service-description"
                         data-tr="Yapay zeka destekli akıllı sistemlerle işlerinizi otomatikleştirin"
-                        data-en="Automate your business with AI-powered smart systems">Yapay zeka destekli akıllı
-                        sistemlerle işlerinizi otomatikleştirin</p>
+                        data-en="Automate your business with AI-powered smart systems"
+                        data-de="Automatisieren Sie Ihr Unternehmen mit KI-gestützten intelligenten Systemen"
+                        data-fr="Automatisez votre entreprise avec des systèmes intelligents alimentés par l'IA"
+                        data-es="Automatice su negocio con sistemas inteligentes basados en IA"
+                        data-ru="Автоматизируйте свой бизнес с помощью интеллектуальных систем на базе ИИ">Yapay zeka
+                        destekli akıllı sistemlerle işlerinizi otomatikleştirin</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> <span data-tr="AI Chatbot Geliştirme"
-                                data-en="AI Chatbot Development">AI Chatbot Geliştirme</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Otomasyon Araçları"
-                                data-en="Automation Tools">Otomasyon Araçları</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Veri Analizi" data-en="Data Analysis">Veri
-                                Analizi</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Akıllı Asistanlar"
-                                data-en="Smart Assistants">Akıllı Asistanlar</span></li>
+                                data-en="AI Chatbot Development" data-de="KI-Chatbot-Entwicklung"
+                                data-fr="Développement de chatbot IA" data-es="Desarrollo de chatbots de IA"
+                                data-ru="Разработка ИИ-чат-ботов">AI Chatbot Geliştirme</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Otomasyon Araçları" data-en="Automation Tools"
+                                data-de="Automatisierungstools" data-fr="Outils d'automatisation"
+                                data-es="Herramientas de automatización" data-ru="Инструменты автоматизации">Otomasyon
+                                Araçları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Veri Analizi" data-en="Data Analysis"
+                                data-de="Datenanalyse" data-fr="Analyse des données" data-es="Análisis de datos"
+                                data-ru="Анализ данных">Veri Analizi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Akıllı Asistanlar" data-en="Smart Assistants"
+                                data-de="Intelligente Assistenten" data-fr="Assistants intelligents"
+                                data-es="Asistentes inteligentes" data-ru="Интеллектуальные помощники">Akıllı
+                                Asistanlar</span></li>
                     </ul>
                 </div>
 
@@ -173,21 +260,34 @@
                     <div class="service-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3 class="service-title" data-tr="Web Uygulamaları" data-en="Web Applications">Web Uygulamaları
+                    <h3 class="service-title" data-tr="Web Uygulamaları" data-en="Web Applications"
+                        data-de="Web-Anwendungen" data-fr="Applications Web" data-es="Aplicaciones web"
+                        data-ru="Веб-приложения">Web Uygulamaları
                     </h3>
                     <p class="service-description"
                         data-tr="Modern ve responsive web platformları ile dijital varlığınızı güçlendirin"
-                        data-en="Strengthen your digital presence with modern and responsive web platforms">Modern ve
-                        responsive web platformları ile dijital varlığınızı güçlendirin</p>
+                        data-en="Strengthen your digital presence with modern and responsive web platforms"
+                        data-de="Stärken Sie Ihre digitale Präsenz mit modernen und responsiven Webplattformen"
+                        data-fr="Renforcez votre présence numérique avec des plateformes Web modernes et réactives"
+                        data-es="Fortalezca su presencia digital con plataformas web modernas y adaptables"
+                        data-ru="Укрепите свое цифровое присутствие с помощью современных и адаптивных веб-платформ">
+                        Modern ve responsive web platformları ile dijital varlığınızı güçlendirin</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> <span data-tr="Özel Web Platformları"
-                                data-en="Custom Web Platforms">Özel Web Platformları</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="SaaS Çözümleri" data-en="SaaS Solutions">SaaS
-                                Çözümleri</span></li>
+                                data-en="Custom Web Platforms" data-de="Maßgeschneiderte Webplattformen"
+                                data-fr="Plateformes Web personnalisées" data-es="Plataformas web a medida"
+                                data-ru="Индивидуальные веб-платформы">Özel Web Platformları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="SaaS Çözümleri" data-en="SaaS Solutions"
+                                data-de="SaaS-Lösungen" data-fr="Solutions SaaS" data-es="Soluciones SaaS"
+                                data-ru="SaaS-решения">SaaS Çözümleri</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="E-ticaret Sistemleri"
-                                data-en="E-commerce Systems">E-ticaret Sistemleri</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Dashboard & Panel"
-                                data-en="Dashboard & Panel">Dashboard & Panel</span></li>
+                                data-en="E-commerce Systems" data-de="E-Commerce-Systeme"
+                                data-fr="Systèmes d'e-commerce" data-es="Sistemas de comercio electrónico"
+                                data-ru="Системы электронной коммерции">E-ticaret
+                                Sistemleri</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Dashboard & Panel" data-en="Dashboard & Panel"
+                                data-de="Dashboard & Panel" data-fr="Tableau de bord et panneau"
+                                data-es="Tablero y panel" data-ru="Панели мониторинга">Dashboard & Panel</span></li>
                     </ul>
                 </div>
 
@@ -196,41 +296,61 @@
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3 class="service-title" data-tr="Mobil Uygulamalar" data-en="Mobile Applications">Mobil
-                        Uygulamalar</h3>
+                    <h3 class="service-title" data-tr="Mobil Uygulamalar" data-en="Mobile Applications"
+                        data-de="Mobile Anwendungen" data-fr="Applications mobiles" data-es="Aplicaciones móviles"
+                        data-ru="Мобильные приложения">Mobil Uygulamalar</h3>
                     <p class="service-description"
                         data-tr="iOS ve Android için native ve cross-platform mobil uygulamalar"
-                        data-en="Native and cross-platform mobile applications for iOS and Android">iOS ve Android için
-                        native ve cross-platform mobil uygulamalar</p>
+                        data-en="Native and cross-platform mobile applications for iOS and Android"
+                        data-de="Native und plattformübergreifende mobile Anwendungen für iOS und Android"
+                        data-fr="Applications mobiles natives et multiplateformes pour iOS et Android"
+                        data-es="Aplicaciones móviles nativas y multiplataforma para iOS y Android"
+                        data-ru="Нативные и кроссплатформенные мобильные приложения для iOS и Android">iOS ve Android
+                        için native ve cross-platform mobil uygulamalar</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <span data-tr="iOS Uygulamaları" data-en="iOS Applications">iOS
-                                Uygulamaları</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="iOS Uygulamaları" data-en="iOS Applications"
+                                data-de="iOS-Anwendungen" data-fr="Applications iOS" data-es="Aplicaciones iOS"
+                                data-ru="iOS-приложения">iOS Uygulamaları</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Android Uygulamaları"
-                                data-en="Android Applications">Android Uygulamaları</span></li>
+                                data-en="Android Applications" data-de="Android-Anwendungen"
+                                data-fr="Applications Android" data-es="Aplicaciones Android"
+                                data-ru="Android-приложения">Android Uygulamaları</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Cross-Platform Çözümler"
-                                data-en="Cross-Platform Solutions">Cross-Platform Çözümler</span></li>
+                                data-en="Cross-Platform Solutions" data-de="Plattformübergreifende Lösungen"
+                                data-fr="Solutions multiplateformes" data-es="Soluciones multiplataforma"
+                                data-ru="Кроссплатформенные решения">Cross-Platform Çözümler</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Progressive Web Apps"
-                                data-en="Progressive Web Apps">Progressive Web Apps</span></li>
+                                data-en="Progressive Web Apps" data-de="Progressive Web-Apps"
+                                data-fr="Applications Web progressives" data-es="Aplicaciones web progresivas"
+                                data-ru="Progressive Web Apps">Progressive Web Apps</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features/Skills Section -->
+    <!-- Özellikler ve Yetenekler Bölümü -->
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-tr="Teknik Yetenekler" data-en="Technical Skills">Teknik Yetenekler</h2>
+                <h2 class="section-title" data-tr="Teknik Yetenekler" data-en="Technical Skills"
+                    data-de="Technische Fähigkeiten" data-fr="Compétences techniques" data-es="Habilidades técnicas"
+                    data-ru="Технические навыки">Teknik Yetenekler</h2>
                 <p class="section-description" data-tr="Modern teknolojiler ve araçlarla güçlü çözümler"
-                    data-en="Powerful solutions with modern technologies and tools">Modern teknolojiler ve araçlarla
-                    güçlü çözümler</p>
+                    data-en="Powerful solutions with modern technologies and tools"
+                    data-de="Leistungsstarke Lösungen mit modernen Technologien und Tools"
+                    data-fr="Des solutions puissantes avec des technologies et des outils modernes"
+                    data-es="Soluciones potentes con tecnologías y herramientas modernas"
+                    data-ru="Мощные решения с использованием современных технологий и инструментов">Modern teknolojiler
+                    ve
+                    araçlarla güçlü çözümler</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-category">
-                    <h3 class="category-title" data-tr="Frontend Geliştirme" data-en="Frontend Development">Frontend
-                        Development</h3>
+                    <h3 class="category-title" data-tr="Frontend Geliştirme" data-en="Frontend Development"
+                        data-de="Frontend-Entwicklung" data-fr="Développement Frontend" data-es="Desarrollo Frontend"
+                        data-ru="Фронтенд-разработка">Frontend Development</h3>
                     <div class="tech-tags">
                         <span class="tech-tag"><i class="fab fa-react"></i> React</span>
                         <span class="tech-tag"><i class="fab fa-vuejs"></i> Vue.js</span>
@@ -241,8 +361,9 @@
                 </div>
 
                 <div class="feature-category">
-                    <h3 class="category-title" data-tr="Backend Geliştirme" data-en="Backend Development">Backend
-                        Development</h3>
+                    <h3 class="category-title" data-tr="Backend Geliştirme" data-en="Backend Development"
+                        data-de="Backend-Entwicklung" data-fr="Développement Backend" data-es="Desarrollo Backend"
+                        data-ru="Бэкенд-разработка">Backend Development</h3>
                     <div class="tech-tags">
                         <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
                         <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
@@ -253,7 +374,8 @@
                 </div>
 
                 <div class="feature-category">
-                    <h3 class="category-title" data-tr="Yapay Zeka & ML" data-en="AI & ML">Yapay Zeka & ML</h3>
+                    <h3 class="category-title" data-tr="Yapay Zeka & ML" data-en="AI & ML" data-de="KI & ML"
+                        data-fr="IA et ML" data-es="IA y ML" data-ru="ИИ и МО">Yapay Zeka & ML</h3>
                     <div class="tech-tags">
                         <span class="tech-tag"><i class="fas fa-robot"></i> OpenAI</span>
                         <span class="tech-tag"><i class="fas fa-link"></i> LangChain</span>
@@ -264,7 +386,9 @@
                 </div>
 
                 <div class="feature-category">
-                    <h3 class="category-title" data-tr="Mobil Geliştirme" data-en="Mobile Development">Mobil Geliştirme
+                    <h3 class="category-title" data-tr="Mobil Geliştirme" data-en="Mobile Development"
+                        data-de="Mobile Entwicklung" data-fr="Développement Mobile" data-es="Desarrollo móvil"
+                        data-ru="Мобильная разработка">Mobil Geliştirme
                     </h3>
                     <div class="tech-tags">
                         <span class="tech-tag"><i class="fab fa-react"></i> React Native</span>
@@ -278,14 +402,19 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Fiyatlandırma Bölümü -->
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</h2>
+                <h2 class="section-title" data-tr="Fiyatlandırma" data-en="Pricing" data-de="Preisgestaltung"
+                    data-fr="Tarification" data-es="Precios" data-ru="Цены">Fiyatlandırma</h2>
                 <p class="section-description"
                     data-tr="İhtiyacınıza uygun paketi seçin ve dijital dönüşümünüze başlayın"
-                    data-en="Choose the package that suits your needs and start your digital transformation">
+                    data-en="Choose the package that suits your needs and start your digital transformation"
+                    data-de="Wählen Sie das Paket, das Ihren Anforderungen entspricht, und starten Sie Ihre digitale Transformation"
+                    data-fr="Choisissez le forfait qui correspond à vos besoins et commencez votre transformation numérique"
+                    data-es="Elija el paquete que mejor se adapte a sus necesidades y comience su transformación digital"
+                    data-ru="Выберите пакет, который соответствует вашим потребностям, и начните цифровую трансформацию">
                     İhtiyacınıza uygun paketi seçin ve dijital dönüşümünüze başlayın</p>
             </div>
 
@@ -293,67 +422,101 @@
                 <!-- Starter Package -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-title" data-tr="Başlangıç" data-en="Starter">Başlangıç</h3>
+                        <h3 class="pricing-title" data-tr="Başlangıç" data-en="Starter" data-de="Beginner"
+                            data-fr="Débutant" data-es="Básico" data-ru="Начальный">Başlangıç</h3>
                         <p class="pricing-description" data-tr="Küçük işletmeler için ideal"
-                            data-en="Ideal for small businesses">Küçük işletmeler için ideal</p>
+                            data-en="Ideal for small businesses" data-de="Ideal für kleine Unternehmen"
+                            data-fr="Idéal pour les petites entreprises" data-es="Ideal para pequeñas empresas"
+                            data-ru="Идеально для малого бизнеса">Küçük işletmeler için ideal</p>
                     </div>
                     <div class="pricing-price">
                         <span class="currency">₺</span>
                         <span class="amount">7,000</span>
-                        <span class="period" data-tr="/proje" data-en="/project">/proje</span>
+                        <span class="period" data-tr="/proje" data-en="/project" data-de="/Projekt" data-fr="/projet"
+                            data-es="/proyecto" data-ru="/проект">/proje</span>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <span data-tr="Temel web uygulaması"
-                                data-en="Basic web application">Temel web uygulaması</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Responsive tasarım"
-                                data-en="Responsive design">Responsive tasarım</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="3 sayfa/modül" data-en="3 pages/modules">3
-                                sayfa/modül</span></li>
+                                data-en="Basic web application" data-de="Basis-Webanwendung"
+                                data-fr="Application Web de base" data-es="Aplicación web básica"
+                                data-ru="Базовое веб-приложение">Temel web uygulaması</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Responsive tasarım" data-en="Responsive design"
+                                data-de="Responisve Design" data-fr="Design réactif" data-es="Diseño adaptable"
+                                data-ru="Адаптивный дизайн">Responsive tasarım</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="3 sayfa/modül" data-en="3 pages/modules"
+                                data-de="3 Seiten/Module" data-fr="3 pages/modules" data-es="3 páginas/módulos"
+                                data-ru="3 страницы/модуля">3 sayfa/modül</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Temel SEO optimizasyonu"
-                                data-en="Basic SEO optimization">Temel SEO optimizasyonu</span></li>
+                                data-en="Basic SEO optimization" data-de="Basis-SEO-Optimierung"
+                                data-fr="Optimisation SEO de base" data-es="Optimización SEO básica"
+                                data-ru="Базовая SEO-оптимизация">Temel SEO optimizasyonu</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="1 ay teknik destek"
-                                data-en="1 month technical support">1 ay teknik destek</span></li>
+                                data-en="1 month technical support" data-de="1 Monat technischer Support"
+                                data-fr="1 mois de support technique" data-es="1 mes de soporte técnico"
+                                data-ru="1 месяц техподдержки">1 ay teknik destek</span></li>
                         <li class="disabled"><i class="fas fa-times"></i> <span data-tr="Veritabanı entegrasyonu"
-                                data-en="Database integration">Veritabanı entegrasyonu</span></li>
+                                data-en="Database integration" data-de="Datenbankintegration"
+                                data-fr="Intégration de base de données" data-es="Integración de base de datos"
+                                data-ru="Интеграция базы данных">Veritabanı entegrasyonu</span></li>
                         <li class="disabled"><i class="fas fa-times"></i> <span data-tr="API geliştirme"
-                                data-en="API development">API geliştirme</span></li>
+                                data-en="API development" data-de="API-Entwicklung" data-fr="Développement d'API"
+                                data-es="Desarrollo de API" data-ru="Разработка API">API geliştirme</span></li>
                     </ul>
                     <a href="https://shopier.com/onatdibo" class="btn btn-secondary pricing-btn">
-                        <span data-tr="Başlayın" data-en="Get Started"></span>
+                        <span data-tr="Başlayın" data-en="Get Started" data-de="Anfangen" data-fr="Commencer"
+                            data-es="Empezar" data-ru="Начать">Başlayın</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- Professional Package (Featured) -->
                 <div class="pricing-card featured">
-                    <div class="featured-badge" data-tr="Popüler" data-en="Popular">Popüler</div>
+                    <div class="featured-badge" data-tr="Popüler" data-en="Popular" data-de="Beliebt"
+                        data-fr="Populaire" data-es="Popular" data-ru="Популярное">Popüler</div>
                     <div class="pricing-header">
-                        <h3 class="pricing-title" data-tr="Profesyonel" data-en="Professional">Profesyonel</h3>
+                        <h3 class="pricing-title" data-tr="Profesyonel" data-en="Professional" data-de="Professionell"
+                            data-fr="Professionnel" data-es="Profesional" data-ru="Профессиональный">Profesyonel</h3>
                         <p class="pricing-description" data-tr="Orta ölçekli işletmeler için"
-                            data-en="For medium-sized businesses">Orta ölçekli işletmeler için</p>
+                            data-en="For medium-sized businesses" data-de="Für mittelständische Unternehmen"
+                            data-fr="Pour les moyennes entreprises" data-es="Para medianas empresas"
+                            data-ru="Для среднего бизнеса">Orta ölçekli işletmeler için</p>
                     </div>
                     <div class="pricing-price">
                         <span class="currency">₺</span>
                         <span class="amount">11,000</span>
-                        <span class="period" data-tr="/proje" data-en="/project">/proje</span>
+                        <span class="period" data-tr="/proje" data-en="/project" data-de="/Projekt" data-fr="/projet"
+                            data-es="/proyecto" data-ru="/проект">/proje</span>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <span data-tr="Gelişmiş web uygulaması"
-                                data-en="Advanced web application">Gelişmiş web uygulaması</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Özel tasarım" data-en="Custom design">Özel
-                                tasarım</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="10 sayfa/modül" data-en="10 pages/modules">10
-                                sayfa/modül</span></li>
+                                data-en="Advanced web application" data-de="Erweiterte Webanwendung"
+                                data-fr="Application Web avancée" data-es="Aplicación web avanzada"
+                                data-ru="Расширенное веб-приложение">Gelişmiş web uygulaması</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Özel tasarım" data-en="Custom design"
+                                data-de="Maßgeschneidertes Design" data-fr="Design personnalisé"
+                                data-es="Diseño a medida" data-ru="Индивидуальный дизайн">Özel tasarım</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="10 sayfa/modül" data-en="10 pages/modules"
+                                data-de="10 Seiten/Module" data-fr="10 pages/modules" data-es="10 páginas/módulos"
+                                data-ru="10 страниц/модулей">10 sayfa/modül</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Veritabanı entegrasyonu"
-                                data-en="Database integration">Veritabanı entegrasyonu</span></li>
+                                data-en="Database integration" data-de="Datenbankintegration"
+                                data-fr="Intégration de base de données" data-es="Integración de base de datos"
+                                data-ru="Интеграция базы данных">Veritabanı entegrasyonu</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="REST API geliştirme"
-                                data-en="REST API development">REST API geliştirme</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Admin paneli" data-en="Admin panel">Admin
-                                paneli</span></li>
+                                data-en="REST API development" data-de="REST-API-Entwicklung"
+                                data-fr="Développement d'API REST" data-es="Desarrollo de API REST"
+                                data-ru="Разработка REST API">REST API geliştirme</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Admin paneli" data-en="Admin panel"
+                                data-de="Admin-Panel" data-fr="Panneau d'administration"
+                                data-es="Panel de administración" data-ru="Панель администратора">Admin paneli</span>
+                        </li>
                         <li><i class="fas fa-check"></i> <span data-tr="3 ay teknik destek"
-                                data-en="3 months technical support">3 ay teknik destek</span></li>
+                                data-en="3 months technical support" data-de="3 Monate technischer Support"
+                                data-fr="3 mois de support technique" data-es="3 meses de soporte técnico"
+                                data-ru="3 месяца техподдержки">3 ay teknik destek</span></li>
                     </ul>
                     <a href="https://shopier.com/onatdibo" class="btn btn-primary pricing-btn">
-                        <span data-tr="Başlayın" data-en="Get Started">Başlayın</span>
+                        <span data-tr="Başlayın" data-en="Get Started" data-de="Anfangen" data-fr="Commencer"
+                            data-es="Empezar" data-ru="Начать">Başlayın</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -361,34 +524,51 @@
                 <!-- Enterprise Package -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-title" data-tr="Kurumsal" data-en="Enterprise">Kurumsal</h3>
+                        <h3 class="pricing-title" data-tr="Kurumsal" data-en="Enterprise" data-de="Unternehmen"
+                            data-fr="Entreprise" data-es="Empresarial" data-ru="Корпоративный">Kurumsal</h3>
                         <p class="pricing-description" data-tr="Büyük ölçekli projeler için"
-                            data-en="For large-scale projects">Büyük ölçekli projeler için</p>
+                            data-en="For large-scale projects" data-de="Für Großprojekte"
+                            data-fr="Pour les projets de grande envergure" data-es="Para proyectos a gran escala"
+                            data-ru="Для крупномасштабных проектов">Büyük ölçekli projeler için</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="currency" data-tr="Özel" data-en="Custom">Özel</span>
-                        <span class="amount" data-tr="Fiyat" data-en="Price">Fiyat</span>
+                        <span class="currency" data-tr="Özel" data-en="Custom" data-de="Spezial" data-fr="Spécial"
+                            data-es="Especial" data-ru="Особое">Özel</span>
+                        <span class="amount" data-tr="Fiyat" data-en="Price" data-de="Preis" data-fr="Prix"
+                            data-es="Precio" data-ru="Цена">Fiyat</span>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <span data-tr="Tam özelleştirilmiş çözüm"
-                                data-en="Fully customized solution">Tam özelleştirilmiş çözüm</span></li>
+                                data-en="Fully customized solution" data-de="Vollständig angepasste Lösung"
+                                data-fr="Solution entièrement personnalisée" data-es="Solución totalmente a medida"
+                                data-ru="Полностью индивидуальное решение">Tam özelleştirilmiş çözüm</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Sınırsız sayfa/modül"
-                                data-en="Unlimited pages/modules">Sınırsız sayfa/modül</span></li>
+                                data-en="Unlimited pages/modules" data-de="Unbegrenzte Seiten/Module"
+                                data-fr="Pages/modules illimités" data-es="Páginas/módulos ilimitados"
+                                data-ru="Неограниченное кол-во страниц/модулей">Sınırsız sayfa/modül</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="Mikroservis mimarisi"
-                                data-en="Microservices architecture">Mikroservis mimarisi</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="AI/ML entegrasyonu"
-                                data-en="AI/ML integration">AI/ML entegrasyonu</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="Mobil uygulama"
-                                data-en="Mobile application">Mobil uygulama</span></li>
-                        <li><i class="fas fa-check"></i> <span data-tr="DevOps & CI/CD" data-en="DevOps & CI/CD">DevOps
-                                & CI/CD</span></li>
+                                data-en="Microservices architecture" data-de="Mikroservice-Architektur"
+                                data-fr="Architecture de microservices" data-es="Arquitectura de microservicios"
+                                data-ru="Микросервисная архитектура">Mikroservis mimarisi</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="AI/ML entegrasyonu" data-en="AI/ML integration"
+                                data-de="KI/ML-Integration" data-fr="Intégration d'IA/ML" data-es="Integración de IA/ML"
+                                data-ru="Интеграция ИИ/МО">AI/ML entegrasyonu</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="Mobil uygulama" data-en="Mobile application"
+                                data-de="Mobile App" data-fr="Application mobile" data-es="Aplicación móvil"
+                                data-ru="Мобильное приложение">Mobil uygulama</span></li>
+                        <li><i class="fas fa-check"></i> <span data-tr="DevOps & CI/CD" data-en="DevOps & CI/CD"
+                                data-de="DevOps & CI/CD" data-fr="DevOps et CI/CD" data-es="DevOps y CI/CD"
+                                data-ru="DevOps и CI/CD">DevOps & CI/CD</span></li>
                         <li><i class="fas fa-check"></i> <span data-tr="1 yıl premium destek"
-                                data-en="1 year premium support">1 yıl premium destek</span></li>
+                                data-en="1 year premium support" data-de="1 Jahr Premium-Support"
+                                data-fr="1 an de support premium" data-es="1 año de soporte premium"
+                                data-ru="1 год премиум-поддержки">1 yıl premium destek</span></li>
                     </ul>
                     <a href="mailto:onatdibo@proton.me" class="btn btn-secondary pricing-btn">
-                        <span data-tr="İletişime Geçin" data-en="Contact Us"></span>
+                        <span data-tr="İletişime Geçin" data-en="Contact Us" data-de="Kontaktiere uns"
+                            data-fr="Contactez-nous" data-es="Contáctenos" data-ru="Связаться с нами">İletişime
+                            Geçin</span>
                         <i class="fas fa-arrow-right"></i>
-                        <!-- Açılır menü olarak eposta gönderme ekranı gösterilecek -->
                     </a>
                 </div>
             </div>
@@ -402,42 +582,57 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Alt Bilgi (Footer) -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
                         <i class="fas fa-code"></i>
-                        <span data-tr="Lynto Kodlama" data-en="Lynto Coding">Lynto Kodlama</span>
+                        <span data-tr="Lynto Kodlama" data-en="Lynto Coding" data-de="Lynto Coding"
+                            data-fr="Lynto Coding" data-es="Lynto Coding" data-ru="Lynto Coding">Lynto Kodlama</span>
                     </div>
                     <p data-tr="Müşteri ihtiyaçlarına yönelik dijital çözümler"
-                        data-en="Customer-focused digital solutions">Müşteri ihtiyaçlarına yönelik dijital çözümler</p>
+                        data-en="Customer-focused digital solutions" data-de="Kundenorientierte digitale Lösungen"
+                        data-fr="Solutions numériques axées sur le client"
+                        data-es="Soluciones digitales centradas en el cliente"
+                        data-ru="Цифровые решения, ориентированные на клиента">Müşteri ihtiyaçlarına yönelik dijital
+                        çözümler</p>
                 </div>
 
                 <div class="footer-links">
-                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
-                    <a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a>
-                    <a href="#services" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
-                    <a href="#features" data-tr="Yetenekler" data-en="Features">Yetenekler</a>
-                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing">Fiyatlandırma</a>
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links" data-de="Schnelllinks" data-fr="Liens rapides"
+                        data-es="Enlaces rápidos" data-ru="Быстрые ссылки">Hızlı Linkler</h4>
+                    <a href="#home" data-tr="Ana Sayfa" data-en="Home" data-de="Startseite" data-fr="Accueil"
+                        data-es="Inicio" data-ru="Главная">Ana Sayfa</a>
+                    <a href="#services" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen"
+                        data-fr="Services" data-es="Servicios" data-ru="Услуги">Hizmetler</a>
+                    <a href="#features" data-tr="Yetenekler" data-en="Features" data-de="Fähigkeiten"
+                        data-fr="Capacités" data-es="Habilidades" data-ru="Навыки">Yetenekler</a>
+                    <a href="#pricing" data-tr="Fiyatlandırma" data-en="Pricing" data-de="Preise" data-fr="Tarification"
+                        data-es="Precios" data-ru="Цены">Fiyatlandırma</a>
                 </div>
 
                 <div class="footer-social">
-                    <h4 data-tr="Sosyal Medya" data-en="Social Media">Sosyal Medya</h4>
+                    <h4 data-tr="Sosyal Medya" data-en="Social Media" data-de="Soziale Medien" data-fr="Médias sociaux"
+                        data-es="Redes sociales" data-ru="Социальные сети">Sosyal Medya</h4>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/onatdibo" aria-label="LinkedIn"><i
+                        <a href="https://linkedin.com/in/onatdibo" aria-label="LinkedIn" title="LinkedIn"><i
                                 class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/zealmight" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://x.com/zealmight" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/zealmght" aria-label="Instagram"><i
+                        <a href="https://github.com/zealmight" aria-label="GitHub" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://x.com/zealmight" aria-label="Twitter" title="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/zealmght" aria-label="Instagram" title="Instagram"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Lynto Coding. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm
+                <p>&copy; 2025 Lynto Coding. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved."
+                        data-de="Alle Rechte vorbehalten." data-fr="Tous droits réservés."
+                        data-es="Todos los derechos reservados." data-ru="Все права защищены.">Tüm
                         hakları saklıdır.</span></p>
             </div>
         </div>
