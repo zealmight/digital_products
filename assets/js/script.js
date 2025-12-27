@@ -60,20 +60,20 @@ function initLanguage() {
         option.addEventListener('click', () => {
             const lang = option.dataset.lang;
             if (lang !== currentLang) {
-                switchLanguage(lang);
+                switchLanguage(lang, true); // true: sayfa yeniden yüklensin
             }
             langDropdown.classList.remove('active');
         });
     });
 
-    // Başlangıç dilini uygula
-    switchLanguage(currentLang);
+    // Başlangıç dilini uygula (yeniden yükleme yapmadan)
+    switchLanguage(currentLang, false);
 }
 
 // ==========================================
 // DİLİ DEĞİŞTİR VE KAYDET
 // ==========================================
-function switchLanguage(lang) {
+function switchLanguage(lang, shouldReload = false) {
     currentLang = lang;
     localStorage.setItem('preferredLanguage', lang);
 
@@ -93,6 +93,11 @@ function switchLanguage(lang) {
     });
 
     applyLanguage(lang);
+
+    // Eğer istenmişse sayfayı yenile
+    if (shouldReload) {
+        window.location.reload();
+    }
 }
 
 // ==========================================
