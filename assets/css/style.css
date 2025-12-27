@@ -209,6 +209,12 @@ body.light-theme .navbar.scrolled {
     width: 100%;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
 .nav-controls {
     display: flex;
     align-items: center;

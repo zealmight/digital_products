@@ -95,7 +95,7 @@ function initLanguage() {
     });
 
     // Başlangıç dilini uygula
-    applyLanguage(currentLang);
+    switchLanguage(currentLang);
 }
 
 // ==========================================
